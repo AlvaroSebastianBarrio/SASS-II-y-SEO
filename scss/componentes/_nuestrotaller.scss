@@ -1,0 +1,11 @@
+.cuerponuestrotaller{
+  font-family: map-get($map: $letraybackground, $key: tipoletra2 );
+  font-style:map-get($map: $letraybackground, $key: estiloletra);
+  height: 100vh;
+  display: flex;
+  background-image: (map-get($map: $letraybackground, $key: imagenfondo2));
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}

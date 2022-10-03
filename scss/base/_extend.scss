@@ -1,0 +1,14 @@
+%disposicion{
+    display: flex;
+    flex-direction: row;
+}
+
+.productos_ofrecidos{
+    @extend %disposicion;
+}
+.divProductos2{
+    @extend %disposicion;
+}
+.pagina_contacto{
+    @extend %disposicion;
+}

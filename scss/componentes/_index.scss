@@ -1,0 +1,128 @@
+
+
+/*----------Pagina index------------------*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: $font-family_1;
+	text-decoration: none;
+	color: $color_1;
+}
+.bg-colornav {
+	background-color: nth($lista_colores, 2);
+	height: 16%;
+}
+.nav-link {
+	color: $color_2 !important;
+}
+.navbar-toggler-icon {
+	background-color: $background-color_2;
+	border-radius: 20%;
+}
+/*.bg-colornavgrad {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,14,101,1) 35%, rgba(0,212,255,1) 100%);
+}*/
+#main-header {
+	position: absolute;
+	height: 26%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.navegacion {
+	position: absolute;
+	z-index: 1000;
+}
+#logo {
+	display: flex;
+	margin-left: 10px;
+	align-items: center;
+	img {
+		height: 60px;
+	}
+}
+#encabezado {
+	font-family: $font-family_1;
+	margin-left: 20px;
+	color: $color_3;
+}
+.PiePagina {
+	display: flex;
+	width: 100%;
+	height: 15%;
+	position: absolute;
+	bottom: 0;
+	background-color: nth($lista_colores, 2);
+	align-items: center;
+	justify-content: center;
+}
+body {
+	height: 100vh;
+	display: flex;
+	background-image: url(../img/fondobg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+}
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+li {
+	list-style: none;
+	cursor: pointer;
+	padding: 1vw;
+	transition: all .3s ease 0s;
+	&:hover {
+		transform: scale(99%);
+	}
+	>a {
+		&:hover {
+			color: $color_4 !important;
+			background-color: $background-color_1 !important;
+		}
+	}
+}
+#navbarSupportedContent {
+	background-color: nth($lista_colores, 2);
+}
+.dropdown-item {
+	color: $color_1;
+}
+.dropdown-menu.show {
+	background-color: nth($lista_colores, 2);
+}
+
+.carrousel1 {
+	z-index: -1;
+}
+.carousel-inner {
+	>.carousel-item {
+		active {
+			>img {
+				object-fit: scale-down;
+				height: 35vh;
+				width: 100%;
+			}
+		}
+		>img {
+			object-fit: scale-down;
+			height: 35vh;
+			width: 100%;
+		}
+	}
+}
+.carrusel1 {
+	background-color: $background-color_3;
+}
+.carrusel2 {
+	background-color: $background-color_3;
+}
+.carrusel3 {
+	background-color: $background-color_3;
+}

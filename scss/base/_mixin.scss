@@ -1,0 +1,9 @@
+@mixin background-colornav ($altura){
+    height: $altura;
+}
+
+.bg-colornav {
+    
+    @include background-colornav(15%)
+  }
+     
